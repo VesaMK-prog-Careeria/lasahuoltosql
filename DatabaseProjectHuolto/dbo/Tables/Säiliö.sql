@@ -1,0 +1,4 @@
+CREATE TABLE [dbo].[Säiliö]
+(
+  [Id] INT NOT NULL PRIMARY KEY
+)
