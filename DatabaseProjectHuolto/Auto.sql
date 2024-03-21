@@ -7,5 +7,6 @@ CREATE TABLE [dbo].[Auto] (
     [Piirturi]         DATE          NULL,
     [Alkolukko]        DATE          NULL,
     [Nopeudenrajoitin] DATE          NULL,
-    [AutoInfoID]       INT           NULL
+    [AutoInfoID]       INT           NULL,
+    CONSTRAINT [FK_Auto_Säiliö] FOREIGN KEY ([SäiliöID]) REFERENCES [dbo].[Säiliö] ([SäiliöID])
 );
