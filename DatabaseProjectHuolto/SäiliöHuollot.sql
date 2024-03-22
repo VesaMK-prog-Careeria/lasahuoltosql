@@ -1,7 +1,7 @@
 CREATE TABLE [dbo].[SäiliöHuollot] (
-    [HuollonID]      INT            NOT NULL PRIMARY KEY CLUSTERED ([HuollonID] ASC),
-    [SäiliöID]       INT            NULL,
-    [HuoltoPVM]      DATE           NULL,
+    [HuoltoID]       INT            NOT NULL PRIMARY KEY CLUSTERED ([HuoltoID] ASC),
+    [SäiliöID]       INT            NOT NULL,
+    [HuoltoPvm]      DATE           NULL,
     [HuoltoPaikkaID] NCHAR (50)     NULL,
     [HuollonKuvaus]  NVARCHAR (200) NULL,
     [Kuva]           IMAGE          NULL,

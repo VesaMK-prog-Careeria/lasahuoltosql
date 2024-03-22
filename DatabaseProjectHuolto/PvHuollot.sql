@@ -1,6 +1,6 @@
 CREATE TABLE [dbo].[PvHuollot] (
-    [HuollonID]     INT             NOT NULL PRIMARY KEY CLUSTERED ([HuollonID] ASC),
-    [PvID]          INT             NULL,
+    [HuoltoID]      INT             NOT NULL PRIMARY KEY CLUSTERED ([HuoltoID] ASC),
+    [PvID]          INT             NOT NULL,
     [HuoltoPvm]     DATE            NULL,
     [Huoltopaikka]  NVARCHAR (50)   NULL,
     [HuollonKuvaus] NVARCHAR (2000) NULL,
